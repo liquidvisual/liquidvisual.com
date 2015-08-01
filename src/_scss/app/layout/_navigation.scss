@@ -1,0 +1,91 @@
+/*
+    NAVIGATION.CSS
+
+    - Last updated: ^^^^^^^^
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+
+$global-radius: rem-calc(8) !default;
+
+//-----------------------------------------------------------------
+// Navigation
+//-----------------------------------------------------------------
+
+.global-navigation {
+
+}
+
+//-----------------------------------------------------------------
+// Topbar
+//-----------------------------------------------------------------
+
+.topbar {
+	@media #{$large-up} {
+	    position: absolute;
+	    top: rem-calc(40);
+	    right: rem-calc(15);
+	    width: 100%;
+	    z-index: 5;
+	}
+
+	//=========================================
+	//
+	//=========================================
+
+	ul {
+		font-family: "Montserrat";
+		background: rgba(255,255,255,0.12);
+		border: 1px solid white;
+		// border-color: rgba(255,255,255,0.6);
+		border-radius: $global-radius;
+		float: right;
+		font-size: rem-calc(16);
+		// text-transform: lowercase;
+	}
+
+	li {
+		display: inline-block;
+		float: left;
+		margin-bottom: 0;
+	}
+
+	li:first-child a { border-radius: $global-radius 0 0 $global-radius; }
+	li:last-child a { border-radius: 0 $global-radius $global-radius 0; }
+
+	a {
+		display: block;
+		padding: rem-calc(0 20);
+		line-height: rem-calc(44);
+		color: white;
+		float: left;
+		// font-weight: 500;
+		// background: red;
+
+		&:hover {
+			background: rgba(255,255,255,0.15);
+			// background: #00a3bb;
+		}
+	}
+
+	li.active:not(:first-child) > a {
+		background: rgba(255,255,255,0.15);
+	}
+}
+
+//=========================================
+//
+//=========================================
+
+.topbar ul {
+	// background: #00a3bb;
+	// background: -moz-linear-gradient(left,  #00a3bb 0%, #ff0055 100%);
+	// background: -webkit-gradient(linear, left top, right top, color-stop(0%,#00a3bb), color-stop(100%,#ff0055));
+	// background: -webkit-linear-gradient(left,  #00a3bb 0%,#ff0055 100%);
+	// background: -o-linear-gradient(left,  #00a3bb 0%,#ff0055 100%);
+	// background: -ms-linear-gradient(left,  #00a3bb 0%,#ff0055 100%);
+	// background: linear-gradient(to right,  #00a3bb 0%,#ff0055 100%);
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a3bb', endColorstr='#ff0055',GradientType=1 );
+}

@@ -1,0 +1,26 @@
+---
+layout: master
+logo_type: "/img/content/logo-type-white-transparent.svg"
+---
+
+{% assign hero_image = page.hero_image %}
+
+<!-- HERO -->
+<div class="lv-hero is-alternate" style="background-image: url('{{ hero_image | prepend: site.assets }}')" data-background-image="{{ hero_image | prepend: site.assets }}">
+    <div class="lv-hero-caption animated fadeInLeft">
+        <div class="row outer-row">
+            <div class="large-11 columns">
+                <h1>{{ page.title }}</h1>
+                <p class="subtext"><i class="fi-calendar"></i> Written by <strong>Mitch</strong> on Jan 28, 2015</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="lv-hero-down-button">
+        <a href="#"><i class="fa fa-angle-down"></i></a>
+    </div>
+</div>
+
+
+
+{{ content }}

@@ -1,0 +1,22 @@
+# GLOBAL SITE SETTINGS
+
+# General
+seo_title: "Liquid Visual - Responsive Web Development for Agencies"
+title: "liquidvisual - Responsive Web Development"
+company: "liquidvisual"
+description: ""
+
+# Contact Info
+email: hello@liquidvisual.com
+phone: (05) 555 555
+fax: (05) 555 555
+address: "ABC Street, Earth"
+
+# Social Networks
+facebook: ""
+
+# Google Map
+google_map: ""
+
+# Google Analytics
+google_analytics: "UA-XXXXXXXX-X"

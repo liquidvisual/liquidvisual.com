@@ -1,0 +1,33 @@
+/*
+    SPECIAL.CSS - Refactor Later
+
+    - Last updated: ^^^^^^^^
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Special
+//-----------------------------------------------------------------
+
+.primary-color {
+    color: $primary-color;
+}
+
+//=========================================
+//
+//=========================================
+
+.lead:first-letter {
+	position: relative;
+	font-size: rem-calc(60);
+	float: left;
+	display: inline-block;
+	margin: -10px 5px 0 0;
+	color: $primary-color;
+}
+
+.lv-page {
+	// border-left: 10px solid #D53A6F;
+}

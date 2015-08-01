@@ -1,0 +1,141 @@
+/*
+    HERO.CSS
+
+    - Last updated: 01.06.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+
+$hero-height: rem-calc(600);
+
+//-----------------------------------------------------------------
+// Hero
+//-----------------------------------------------------------------
+
+.lv-hero {
+	display: table;
+	width: 100%;
+	height: $hero-height;
+	background: url(../img/content/banner-1.jpg) no-repeat center center;
+	background-size: cover;
+
+	@media #{$xlarge-up} {
+	    // background-attachment: fixed;
+	}
+
+	.subtext {
+		color: white;
+		font-size: $h5-font-size;
+	}
+
+	//=========================================
+	// hero Caption
+	//=========================================
+
+	.lv-hero-caption {
+		padding-bottom: rem-calc(50); // variable
+		display: table-cell;
+		vertical-align: middle;
+
+		h1 {
+			color: white;
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+// FULLSCREEN HERO
+//-----------------------------------------------------------------
+
+.lv-hero.is-fullscreen {
+	height: 100%;
+}
+
+//-----------------------------------------------------------------
+// ALTERNATE HERO
+//-----------------------------------------------------------------
+
+.lv-hero.is-alternate {
+
+	@media #{$small-only} {
+		// height: 100%;
+		height: auto;
+		display: block;
+		padding-top: rem-calc(100); // variable * 2
+	}
+
+	.lv-hero-caption {
+		// padding-bottom: 0;
+		vertical-align: bottom;
+
+		h1 {
+			// text-transform: lowercase;
+			@media #{$medium-up} {
+			    font-size: rem-calc(56);
+			}
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+
+//=========================================
+// LV HERO MORE BUTTON
+//=========================================
+
+.lv-hero-down-button {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+
+	a {
+		moz-animation: downbounce 4s infinite;
+		-webkit-animation: downbounce 4s infinite;
+		animation: downbounce 4s infinite;
+
+		display: inline-block;
+		width: rem-calc(60);
+		height: rem-calc(60);
+		line-height: rem-calc(60);
+		border-radius: 100%;
+		// color: white;
+		color: rgba(255,255,255,0.6);
+		font-size: rem-calc(60);
+
+
+
+		&:hover {
+			background: rgba(0,0,0, 0.3);
+			color: white;
+		}
+	}
+}
+
+//=========================================
+//
+//=========================================
+
+// .lv-hero .lv-vertical-center {
+//     @media #{$medium-up} {
+//         position: relative;
+//         top: 40%; // to account for top margins of H1s
+//         -webkit-transform: translateY(-40%);
+//             -ms-transform: translateY(-40%);
+//                 transform: translateY(-40%);
+//     }
+// }
+
+// @media #{$medium-up} and (min-height: 768px) {
+// 	background-size: calc(1200px / 2); // image halved
+// }
+
+// @media #{$large-up} {
+//     height: 100vh;
+//     border-bottom: 0;
+// }
