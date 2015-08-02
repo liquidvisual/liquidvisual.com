@@ -22,7 +22,8 @@
         {% endif %}
     </title>
 
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace: 'index.html','' | prepend: site.baseurl }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | prepend: site.assets }}">
 
     <!-- Google Fonts CDN -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Permanent+Marker|Montserrat:400,700">
