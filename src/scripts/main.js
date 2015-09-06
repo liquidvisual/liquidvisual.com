@@ -24,6 +24,18 @@ $(window).load(function() {
 // }
 
 //-----------------------------------------------------------------
+// Pixel Gradient
+//-----------------------------------------------------------------
+
+$(window).load(function() {
+    $("h1.subheader, h2.subheader, h3.subheader").pxgradient({
+      step: 10, // Step Color. The smaller the number, the greater the load. Default: 10
+      colors: ["#F12D66","#20B5C3"],
+      dir: "x"
+    });
+})
+
+//-----------------------------------------------------------------
 // Offcanvas Menu
 //-----------------------------------------------------------------
 

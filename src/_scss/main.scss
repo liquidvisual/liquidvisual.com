@@ -2,7 +2,7 @@
 /*
     MAIN.CSS
 
-    - Last updated: 17.04.15
+    - Last updated: 03.08.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -22,13 +22,12 @@
 @import "liquidvisual/components/toolbox";
 
 //-----------------------------------------------------------------
-// App Unique
+// Application Base
 //-----------------------------------------------------------------
 
-@import "app/base/fonts";
-@import "app/base/global";
-@import "app/base/mixins";
 @import "app/base/variables";
+@import "app/helpers/mixins";
+@import "app/base/global";
 
 //=========================================
 // Components
@@ -37,8 +36,13 @@
 @import "app/components/breadcrumbs";
 @import "app/components/buttons";
 @import "app/components/forms";
+@import "app/components/gallery";
+@import "app/components/hero";
 @import "app/components/lists";
+@import "app/components/media";
+@import "app/components/sections";
 @import "app/components/social-networks";
+@import "app/components/tabs";
 @import "app/components/type";
 
 //=========================================
@@ -51,23 +55,11 @@
 @import "app/layout/sidebar";
 
 //=========================================
-// Modules
-//=========================================
-
-@import "app/modules/gallery";
-@import "app/modules/hero";
-@import "app/modules/media";
-@import "app/modules/modules";
-@import "app/modules/sections";
-@import "app/modules/tabs";
-
-//=========================================
 // Helpers
 //=========================================
 
-@import "app/helpers/expander";
+@import "app/helpers/fonts";
 @import "app/helpers/special";
-@import "app/helpers/text-editor";
 @import "app/helpers/themes";
 
 //-----------------------------------------------------------------
@@ -75,8 +67,8 @@
 //-----------------------------------------------------------------
 
 @import "../_bower_components/font-awesome/scss/font-awesome";
-@import "../_bower_components/slick.js/slick/slick";
+// @import "../_bower_components/slick.js/slick/slick";
 @import "liquidvisual/vendor/foundation-icons";
-// @import "liquidvisual/vendor/magnific-popup/main";
+@import "liquidvisual/vendor/magnific-popup/main";
 @import "liquidvisual/vendor/nprogress";
-@import "liquidvisual/vendor/prism";
+// @import "liquidvisual/vendor/prism";

@@ -3,6 +3,8 @@
 
     - Last updated: 01.06.15
     - hello@liquidvisual.com
+
+    double check this with enterprise wide - which is newer
 */
 //-----------------------------------------------------------------
 // Variables
@@ -18,7 +20,9 @@ $hero-height: rem-calc(600);
 	display: table;
 	width: 100%;
 	height: $hero-height;
-	background: url(../img/content/banner-1.jpg) no-repeat center center;
+	background-color: $dark-bg-color;
+	background-position: center center;
+	background-repeat: no-repeat;
 	background-size: cover;
 
 	@media #{$xlarge-up} {

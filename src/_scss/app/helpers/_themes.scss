@@ -7,11 +7,38 @@
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
+
+$purple-color: #3D3D4F;
+
 //-----------------------------------------------------------------
 // Themes
 //-----------------------------------------------------------------
 
+.dark-minimal {
+	background: $dark-bg-color;
 
+	.global-header {
+		// position: relative;
+		padding-bottom: rem-calc(40);
+		border-bottom: 2px solid $purple-color;
+	}
+
+	.topbar ul {
+		border: 2px solid $purple-color;
+		background: none;
+
+		.active a {
+			background: none; //$purple-color;
+			color: $primary-color;
+		}
+	}
+
+	.lv-hero {
+		// position: relative;
+		padding-top: rem-calc(150);
+		border-bottom: 2px solid $purple-color;
+	}
+}
 
 //=========================================
 //

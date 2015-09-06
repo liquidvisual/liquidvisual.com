@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 8]>       <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if lt IE 9]>       <html class="no-js lt-ie9"> <![endif]-->
 <!--[if IE 9]>          <html class="no-js lt-ie10"> <![endif]-->
 <!--[if gt IE 9]><!-->  <html class="no-js"> <!--<![endif]-->
@@ -9,18 +8,7 @@
     <meta name="description" content="{{ page.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>
-        {% comment %} SEO IMPLEMENTATION {% endcomment %}
-        {% if page.url == '/' %}
-            {{ site.data.settings.seo_title }}
-        {% else %}
-            {% if page.seo_title %}
-                {{ page.title }} - {{ page.seo_title }}
-            {% else %}
-                {{ page.title }} - {{ site.data.settings.seo_title }}
-            {% endif %}
-        {% endif %}
-    </title>
+    <title>{{ page.title }}</title>
 
     <link rel="canonical" href="{{ page.url | replace: 'index.html','' | prepend: site.baseurl }}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | prepend: site.assets }}">
@@ -35,22 +23,7 @@
 
     <!-- Priority Scripts -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
-    <!-- // <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
-
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="/scripts/pxgradient-1.0.3.js"></script>
-
-    <script>
-        $(window).load(function() {
-            $("h2.subheader, h3.subheader").pxgradient({
-              step: 10, // Step Color. The smaller the number, the greater the load. Default: 10
-              colors: ["#F12D66","#20B5C3"],
-              dir: "x"
-            });
-        })
-    </script>
-
-    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 </head>
 <body>
     <div class="lv-super">
@@ -70,7 +43,7 @@
                         </div>
                     </div>
                 </div>
-            </nav> <!-- .page-navigation -->
+            </nav>
 
             {{ content }}
 
@@ -107,6 +80,7 @@
     <script src="/_bower_components/nprogress/nprogress.js"></script>
     <script src="/_bower_components/slick.js/slick/slick.js"></script>
     <script src="/scripts/responsive-helper.js"></script>
+    <script src="/scripts/vendor/pxgradient-1.0.3.js"></script>
     <script src="/scripts/main.js"></script>
     <!-- endbuild -->
 
@@ -146,7 +120,8 @@
         $(document).foundation();
     </script>
 
-    <!-- Google Analytics Here -->
+    <!-- Google Analytics -->
+    {% include snippets/google_analytics.html %}
 
     <!-- No Javascript Warning -->
     <noscript>

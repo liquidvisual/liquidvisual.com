@@ -2,7 +2,7 @@
 layout: internal/services
 title: Services
 permalink: /services/
-hero_image: "/img/content/banner-1.jpg"
+hero_image: "/img/content/hero-mobile.jpg"
 logo_type: "/img/content/logo-type-default.svg"
 ---
 
